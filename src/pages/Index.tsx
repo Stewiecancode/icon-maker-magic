@@ -1,16 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import IcoConverter from "@/components/IcoConverter";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="min-h-screen bg-background">
+      <div className="container mx-auto px-4 py-12 md:py-20">
+        <header className="mx-auto max-w-2xl text-center mb-10">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+            Image to ICO Converter
+          </h1>
+          <p className="mt-4 text-muted-foreground">
+            Drop a PNG, JPG, WEBP or GIF and download a multi-size .ico favicon. Everything runs in your browser.
+          </p>
+        </header>
+        <IcoConverter />
+      </div>
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
